@@ -60,6 +60,11 @@
             $('#datatable').DataTable({
                 responsive: true,
                 searching: false,
+                layout: {
+                    topStart: {
+                        buttons: ['copyHtml5', 'excelHtml5', 'csvHtml5', 'pdfHtml5']
+                    }
+                }
             });
         });
     </script>
