@@ -21,7 +21,7 @@
         </li>
         <li>
             <a href="/laporanpemesanan" class="nav-link {{Route::is('laporanPemesananPage') ? 'active' : 'text-white'}}">
-                <span class="mdi mdi-car-estate"></span>
+                <span class="mdi mdi-file-chart"></span>
                 Laporan Periodik Pemesanan kendaraan
             </a>
         </li>
