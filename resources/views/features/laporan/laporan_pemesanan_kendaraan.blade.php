@@ -39,7 +39,7 @@
                     <tbody>
                         @foreach ($jsonRingkasan as $ringkasan)
                             <tr>
-                                <td> {{ $ringkasan->tanggal }} Pesanan </td>
+                                <td> {{ $ringkasan->tanggal }} </td>
                                 <td> {{ $ringkasan->total_pesanan }} Pesanan </td>
                                 <td> {{ $ringkasan->total_pending }} Pesanan </td>
                                 <td> {{ $ringkasan->total_disetujui }} Pesanan </td>

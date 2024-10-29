@@ -1,66 +1,48 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+Account
+Username : admin@gmail.com
+Password : 123
+Role     : Admin
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Username : atasan@gmail.com
+Password : 123
+Role     : atasan
 
-## About Laravel
+Username : atasan2@gmail.com
+Password : 123
+Role     : atasan
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Database-Version: MySQL Ver 15.1
+PHP-Version: 8.2.12
+Framework: Laravel 11.29.0
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Panduan Penggunaan Aplikasi:
+1. Login menggunakan username dan password yang telah dibuat.
+2. Terdapat dua role, yaitu admin dan atasan.
+3. Setelah login, pengguna akan dialihkan ke halaman dashboard yang berisi grafik pemesanan kendaraan
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Pemesanan Kendaraan
+4. Tekan menu pemesanan kendaraan di sidebar menu
+5. Halaman akan menampilkan tabel berisikan data pemesanan kendaraan
+6. Untuk menambahkan pemesanan, tekan tombol "Tambah Pemesanan"
+7. Isi form yang terdapat di halaman penambahan pemesanan
+8. Tekan tombol "Submit" untuk menyimpan data pemesanan
+9. Jika login sebagai admin, maka tombol yang tersedia di setiap data adalah Update. Namun tombol tersebut hanya aktif saat belum diverifikasi atasan
+10. Tekan update untuk melakukan perubahan data pemesanan
+11. Isi form yang terdapat di halaman perubahan pemesanan sesuai dengan data yang diubah
+12. Tekan tombol "Submit" untuk menyimpan perubahan data pemesanan
+13. Jika login sebagai admin, maka tombol yang tersedia adalah verifikasi dan tolak, namun tombol tersebut hanya aktif saat belum diverifikasi atasan dan pihak penyetuju sesuai dengan akun yang digunakan
+14. Tekan verifikasi untuk mengubah status pemesanan menjadi "Diverifikasi oleh atasan"
+15. Tekan tolak untuk mengubah status pemesanan menjadi "Ditolak oleh atasan"
 
-## Learning Laravel
+Laporan Periodik Pemesanan Kendaraan
+16. Tekan menu laporan periodik pemesanan di sidebar menu
+17. Masukkan tanggal awal dan tanggal akhir
+18. Sistem akan menampilkan tabel berisikan data laporan periodik pemesanan kendaraan sesuai berdasarkan tanggal yang diinput
+19. Tekan tombol "Excel" untuk mendownload laporan periodik pemesanan kendaraan dalam bentuk file Excel
+20. Tekan tombol "PDF" untuk mendownload laporan periodik pemesanan kendaraan dalam bentuk file PDF
+21. Tekan tombol "CSV" untuk mendownload laporan periodik pemesanan kendaraan dalam bentuk file CSV
+22. Tekan tombol "copy" untuk menyalin data laporan periodik pemesanan kendaraan ke clipboard
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Sign Out
+23. Tekan nama akun di sidebar bawah
+24. Tekan menu "Sign Out"
