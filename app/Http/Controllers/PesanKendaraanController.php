@@ -46,7 +46,7 @@ class PesanKendaraanController extends Controller
     public function addPesanan(Request $request)
     {
         $request->validate([
-            'tanggal_pemesanan' => 'required|date',
+            'tanggal_pemesanan' => 'required|date|after:today',
             'kendaraan' => 'required|exists:kendaraan,id',
             'driver' => 'required|exists:driver,id',
             'penyetuju' => 'required|exists:users,id',
@@ -71,7 +71,7 @@ class PesanKendaraanController extends Controller
     {
         $id = decrypt($id);
         $request->validate([
-            'tanggal_pemesanan' => 'required|date',
+            'tanggal_pemesanan' => 'required|date|after:today',
             'kendaraan' => 'required|exists:kendaraan,id',
             'driver' => 'required|exists:driver,id',
             'penyetuju' => 'required|exists:users,id',
