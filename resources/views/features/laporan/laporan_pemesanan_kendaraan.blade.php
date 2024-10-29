@@ -39,15 +39,15 @@
                     <tbody>
                         @foreach ($jsonRingkasan as $ringkasan)
                             <tr>
-                                <td> {{ $ringkasan->tanggal }} </td>
-                                <td> {{ $ringkasan->total_pesanan }} </td>
-                                <td> {{ $ringkasan->total_pending }} </td>
-                                <td> {{ $ringkasan->total_disetujui }} </td>
-                                <td> {{ $ringkasan->total_ditolak }} </td>
-                                <td> {{ $ringkasan->kendaraan_milik_perusahaan }} </td>
-                                <td> {{ $ringkasan->kendaraan_sewa }} </td>
-                                <td> {{ $ringkasan->kendaraan_angkutan_orang }} </td>
-                                <td> {{ $ringkasan->kendaraan_angkutan_barang }} </td>
+                                <td> {{ $ringkasan->tanggal }} Pesanan </td>
+                                <td> {{ $ringkasan->total_pesanan }} Pesanan </td>
+                                <td> {{ $ringkasan->total_pending }} Pesanan </td>
+                                <td> {{ $ringkasan->total_disetujui }} Pesanan </td>
+                                <td> {{ $ringkasan->total_ditolak }} Pesanan </td>
+                                <td> {{ $ringkasan->kendaraan_milik_perusahaan }} Pesanan </td>
+                                <td> {{ $ringkasan->kendaraan_sewa }} Pesanan </td>
+                                <td> {{ $ringkasan->kendaraan_angkutan_orang }} Pesanan </td>
+                                <td> {{ $ringkasan->kendaraan_angkutan_barang }} Pesanan </td>
                             </tr>
                         @endforeach
                     </tbody>
