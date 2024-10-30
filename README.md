@@ -16,7 +16,7 @@ PHP-Version: 8.2.12
 Framework: Laravel 11.29.0
 
 Panduan Penggunaan Aplikasi:
-0. Generate key dengan command php artisan key:generate, migrate database dengan menggunakan command php artisan migrate:fresh --seed
+0. Generate key dengan command composer install, php artisan key:generate, migrate database dengan menggunakan command php artisan migrate:fresh --seed. Aplikasi bisa dijalankan menggunakan composer run dev / php artisan serve
 1. Login menggunakan username dan password yang telah dibuat.
 2. Terdapat dua role, yaitu admin dan atasan.
 3. Setelah login, pengguna akan dialihkan ke halaman dashboard yang berisi grafik pemesanan kendaraan
